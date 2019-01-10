@@ -1,10 +1,11 @@
+var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 drawBoard(3, 3);
 
 function drawBoard(across, down) {
   var board = {
     across: across,
     down: down,
-    space: " ",
+    space: "X",
     dash: "-",
     plus: "+",
     line: "|"
@@ -28,8 +29,5 @@ function drawBoard(across, down) {
       process.stdout.write("\n");
     }
   }
-  console.log("\n", board);
+  // console.log("\n", board);
 }
-
-//if (grid % 2 !== 0) {
-//      process.stdout.write("\n");}
