@@ -1,6 +1,7 @@
 var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-drawBoard(3, 3);
 
+drawBoard(3, 3);
+console.log(vBoard[0][1]);
 function drawBoard(across, down) {
   var board = {
     across: across,
