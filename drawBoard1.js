@@ -1,7 +1,12 @@
-var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+var xMove = 1;
 
-drawBoard(3, 3);
-console.log(vBoard[0][1]);
+var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+vBoard[0][0] = "O";
+vBoard[0][1] = "X";
+vBoard[0][2] = "Z";
+
+// console.log(vBoard);
+//console.clear();
 function drawBoard(across, down) {
   var board = {
     across: across,
