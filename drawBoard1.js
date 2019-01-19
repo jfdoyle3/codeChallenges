@@ -1,12 +1,11 @@
-var xMove = 1;
-
-var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-vBoard[0][0] = "O";
-vBoard[0][1] = "X";
-vBoard[0][2] = "Z";
-
-// console.log(vBoard);
-//console.clear();
+drawBoard(3, 3);
+play(1, 2, "X");
+function play(x, y, mark) {
+  var vBoard = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+  vBoard[x][y] = mark;
+  //  vBoard[0][0] = "X";
+  console.log(vBoard);
+}
 function drawBoard(across, down) {
   var board = {
     across: across,

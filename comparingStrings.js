@@ -7,6 +7,7 @@ for (var i = 0; i < compare[2]; i++) {
 
   word3 = word2 - word1;
   output.push(word3);
+
   var total = total + output[i];
 }
 process.stdout.write(output.join(","));
