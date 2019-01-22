@@ -3,14 +3,13 @@ play(5, "X");
 function play(move, token) {
   var vBoard = [1, 2, 3,4, 5, 6, 7, 8, 9];
   vBoard[--move] =token;
-  //  vBoard[0][0] = "X";
   console.log(vBoard);
 }
 function drawBoard(across, down) {
   var board = {
     across: across,
     down: down,
-    space: "X",
+    space: " ",
     dash: "-",
     plus: "+",
     line: "|"
@@ -28,5 +27,4 @@ function drawBoard(across, down) {
       process.stdout.write("\n");
     }
   }
-  // console.log("\n", board);
 }
