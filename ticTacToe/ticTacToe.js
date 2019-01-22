@@ -1,5 +1,5 @@
 drawBoard(3, 3);
-play(5, "X");
+play(9, "O");
 function play(move, token) {
   var vBoard = [1, 2, 3,4, 5, 6, 7, 8, 9];
   vBoard[--move] =token;
