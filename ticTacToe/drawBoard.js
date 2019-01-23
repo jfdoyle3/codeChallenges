@@ -2,7 +2,7 @@ function drawBoard(across, down) {
   var board = {
     across: across,
     down: down,
-    space: "X",
+    space: " ",
     dash: "-",
     plus: "+",
     line: "|"
@@ -26,5 +26,5 @@ function drawBoard(across, down) {
       process.stdout.write("\n");
     }
   }
-  export default { drawBoard };
 }
+module.exports.drawBoard = drawBoard;

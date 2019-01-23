@@ -1,4 +1,5 @@
-//function play(move, token) {
-// vBoard[--move] = token;
-// return vBoard;
-//}
+function move(space, token) {
+  vBoard[--space] = token;
+  return move;
+}
+module.exports.move = move;

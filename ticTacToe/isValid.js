@@ -1,6 +1,5 @@
 function isValid(marked) {
-  console.log(vBoard[marked]);
-  if (vBoard[marked] == "X" || vBoard[marked] == "O") {
+  if (marked == "X" || marked == "O") {
     console.log("invalid move");
     return false;
   } else {
@@ -8,3 +7,4 @@ function isValid(marked) {
     return true;
   }
 }
+module.exports.isValid = isValid;
