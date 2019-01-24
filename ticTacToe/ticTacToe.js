@@ -1,6 +1,6 @@
-const { drawBoard } = require("./drawBoard");
-const { move } = require("./move");
-const { isValid } = require("./isValid");
+const { drawBoard } = require("./drawBoard"),
+ { move } = require("./move"),
+ { isValid } = require("./isValid");
 
 const vBoard = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 vBoard[9] = "X";
