@@ -1,7 +1,7 @@
-function drawBoard(across, down) {
+function drawBoard() {
   var board = {
-    across: across,
-    down: down,
+    across: 3,
+    down: 3,
     space: " ",
     dash: "-",
     plus: "+",
@@ -27,5 +27,4 @@ function drawBoard(across, down) {
     }
   }
 }
-  module.exports.drawBoard=drawBoard;
-
+module.exports.drawBoard = drawBoard;
