@@ -1,12 +1,23 @@
-const { drawBoard } = require("./drawBoard");
-const { move } = require("./move");
-const { isValid } = require("./isValid");
 
+const {drawBoard}=require('./drawBoard');
+const {isValid}=require('./isValid');
+console.log(drawBoard(3, 3));
 
 const vBoard = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-vBoard[9] = "X";
-marked = vBoard[9];
-console.log(move(9, "O"));
+ vBoard[3]="X";
+isValid()
+console.log(vBoard);
 
-console.log(drawBoard(3, 3));
-isValid(marked);
+
+
+
+// Extra Code
+//--------------
+//isValid(marked);
+//{ move } = require("./move"),
+ //{ isValid } = require("./isValid");
+
+//
+//vBoard[9] = "X";
+//marked = vBoard[9];
+//console.log(move(9, "O"));
