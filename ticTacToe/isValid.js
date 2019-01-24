@@ -7,4 +7,5 @@ function isValid(marked) {
     return true;
   }
 }
-module.exports.isValid = isValid;
+const _isValid = isValid;
+export { _isValid as isValid };
