@@ -7,4 +7,4 @@ function isValid(marked) {
     return true;
   }
 }
-module.exports.isValid = isValid;
+module.exports.isValid=isValid;
