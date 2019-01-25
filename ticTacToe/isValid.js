@@ -3,7 +3,7 @@ function isValid(...marked) {
     console.log("invalid move");
     return false;
   } else {
-    console.log("vaild move");
+    console.log("valid move");
     return true;
   }
 }
