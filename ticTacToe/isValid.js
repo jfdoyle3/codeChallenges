@@ -1,4 +1,4 @@
-function isValid(...marked) {
+function isValid(marked) {
   if (marked == "X" || marked == "O") {
     console.log("invalid move");
     return false;
