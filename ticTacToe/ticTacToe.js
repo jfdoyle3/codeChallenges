@@ -14,3 +14,6 @@ for (var i = 0; i < vBoard.length; i++) {
 }
 process.stdout.write("\nCan I play in position? " + ++p2 + "  ");
 isValid(vBoard[--p2]);
+
+console.log("valid move");
+console.log("invalid move");
