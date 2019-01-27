@@ -1,8 +1,5 @@
-marked = "X";
-isValid(marked);
-
 function isValid(marked) {
-  if (!(marked == "X" || marked == "O")) {
+  if (marked == "X" || marked == "O") {
     console.log("f");
     return false;
   } else {
@@ -10,4 +7,4 @@ function isValid(marked) {
     return true;
   }
 }
-//module.exports.isValid = isValid;
+module.exports.isValid = isValid;
