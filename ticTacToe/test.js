@@ -1,8 +1,13 @@
-var x = [ 'p0', 'p1', 'p2' ]; 
-call_me(x);
+const z = ["X", "X", "X", "X", "X", "X", "X", "X", "X"];
+//const z= ["O", "O", "O", "O", "O", "O", "O", "O", "O"];
+//const draw = ["X", "O", "O", "O", "X", "X", "X", "O", "O"];
+//const z = ["X","X","X","X","X","X","X","X","X"];
+//const z = ["X","X","X","X","X","X","X","X","X"];
 
-function call_me(params) {
-  for (i=0; i<params.length; i++) {
-    console.log(params[i])
+for (var i = 0; i < z.length; i++) {
+  if (i % 3 == 0) {
+    process.stdout.write("\n");
   }
+  process.stdout.write(z[i] + " ");
 }
+console.log("\n");

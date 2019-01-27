@@ -1,9 +1,9 @@
-function isValid(...marked) {
+function isValid(marked) {
   if (marked == "X" || marked == "O") {
-    console.log("invalid move");
+    console.log("f");
     return false;
   } else {
-    console.log("valid move");
+    console.log("t");
     return true;
   }
 }
