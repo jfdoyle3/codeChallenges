@@ -1,4 +1,4 @@
-var a, b, c, i;
+var a, b, c, i, token, places, spot;
 const grid = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 //const z = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]; // X wins
 //const z = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]; // O wins
@@ -18,14 +18,26 @@ for (var i = 0; i < z.length; i++) {
 }
 console.log("\n");
 
-i = 0;
-while (i < z.length) {
-  //  if (z[i] == "X" && z[i] == "X" && z[i] == "X") {
-  //console.log("Wins!!! ");
-  //    break;
-  //  }
-  i++;
+for (var w = 0; w < z.length; w++) {
+  token = z[w];
+  places = w.toString();
+
+  if (token == "X") {
+    places.search("456");
+    console.log("Win!");
+    break;
+  }
 }
+console.log("\n");
+//i = 0;
+//while (i < z.length) {
+// across
+//    if (z[i] == "X" && z[i] == "X" && z[i] == "X") {
+//console.log("Wins!!! ");
+//    break;
+//  }
+//  i++;
+//}
 
 //  Notes:
 // math works as a 1 base index.
