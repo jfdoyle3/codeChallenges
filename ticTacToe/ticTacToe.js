@@ -10,7 +10,7 @@ console.log(vBoard);
 //win(a,b,c);
 //process.stdout.write("\nCan I play in position? " + p2 + "  ");
 //isValid(vBoard[p2]);
-
+//
 // space , X  , O
 // a,b,c -check for same character
 // across  +1

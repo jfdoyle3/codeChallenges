@@ -2,8 +2,8 @@ var a, b, c, i, token, places, spot;
 const grid = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 //const z = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]; // X wins
 //const z = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]; // O wins
-const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
-//const z = ["O", "X", "O", "X", "X", "X", "X", "O", "O"]; // X wins
+//const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
+const z = ["O", "X", "O", "X", "X", "X", "X", "O", "O"]; // X wins
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; // O wins
 //const z=[1,2,3,4,5,6,7,8,9];
 //const z=[[1,2,3],[4,5,6],[7,8,9]];
@@ -21,9 +21,11 @@ console.log("\n");
 for (var w = 0; w < z.length; w++) {
   token = z[w];
   places = w.toString();
-
+  //process.stdout.write();
+  //console.log();
   if (token == "X") {
-    process.stdout.write(places.search();
+    process.stdout.write(places);
+    //console.log(win);
     //console.log("Win!");
   }
 }
