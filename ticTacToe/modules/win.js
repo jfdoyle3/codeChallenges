@@ -31,8 +31,9 @@ for (var w = 0; w < z.length; w++) {
   }
 }
 var win = playField.join("");
-console.log(win);
-if (win.match(/^345$/)) {
+const wins = [/456/g];
+//console.log();
+if (win.match(wins[0])) {
   console.log("win");
 }
 
@@ -65,3 +66,5 @@ console.log("\n");
 //
 //  159  =  15
 //  357  =  15
+
+// get the indexof a spot then check indexof +dir to see if the token is the same.
