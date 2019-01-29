@@ -3,11 +3,13 @@ const grid = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 //const z = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]; // X wins
 //const z = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]; // O wins
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
-const z = ["X", "X", "X", "O", "O", "X", "X", "O", "O"]; // X wins
+const z = ["O", "X", "O", "X", "X", "X", "X", "O", "O"]; // X wins
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; // O wins
 //const z=[1,2,3,4,5,6,7,8,9];
 //const z=[[1,2,3],[4,5,6],[7,8,9]];
 //const z=[["X,"X","X"],["X","X","X"],["X","X","X"]];
+
+//const x = ["X", "O"];
 for (var i = 0; i < z.length; i++) {
   if (i % 3 == 0) {
     process.stdout.write("\n");
@@ -15,13 +17,13 @@ for (var i = 0; i < z.length; i++) {
   process.stdout.write(grid[i] + "[" + z[i] + "]");
 }
 console.log("\n");
+
 for (var w = 0; w < z.length; w++) {
   token = z[w];
   places = w.toString();
-  regex = "/^456";
   //process.stdout.write();
-  //console.log();
-  if (token == "X" && places.search(regex)) {
+  console.log(typeof places);
+  if (token == "X") {
     process.stdout.write(places);
     //console.log(win);
     //console.log("Win!");
