@@ -1,4 +1,4 @@
-function move(vBoard, token) {
+const move=(vBoard, token)=> {
   const readline = require("readline"),
     rl = readline.createInterface(process.stdin, process.stdout);
   //  rl.question("Move " + token[0] + " ", move => {
@@ -6,7 +6,7 @@ function move(vBoard, token) {
   rl.prompt();
   rl.on("line", vBoard => {
     console.log(token[0] + ` has been placed at ${move}`);
-    vBoard[--move] = token[0];
+    vBoard[move] = token[0];
     console.log(vBoard);
     for (var i = 0; i < vBoard.length; i++) {
       if (i % 3 == 0) {
@@ -17,7 +17,7 @@ function move(vBoard, token) {
     rl.close();
   });
   //  });
-}
+};
 module.exports.move = move;
 
 //rl.setPrompt("guess> ");
