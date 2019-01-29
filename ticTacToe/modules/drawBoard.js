@@ -1,4 +1,4 @@
-function drawBoard() {
+const drawBoard = () => {
   var board = {
     across: 3,
     down: 3,
@@ -26,5 +26,5 @@ function drawBoard() {
       process.stdout.write("\n");
     }
   }
-}
+};
 module.exports.drawBoard = drawBoard;

@@ -17,17 +17,25 @@ for (var i = 0; i < z.length; i++) {
   process.stdout.write(grid[i] + "[" + z[i] + "]");
 }
 console.log("\n");
-
+const playField = [];
 for (var w = 0; w < z.length; w++) {
   token = z[w];
-  places = w.toString();
 
+  //process.stdout.write();
+  //console.log();
   if (token == "X") {
-    places.search("456");
-    console.log("Win!");
-    break;
+    playField.push(w);
+    //process.stdout.write(playField)
+    //console.log(win);
+    //console.log("Win!");
   }
 }
+var win = playField.join("");
+console.log(win);
+if (win.match(/^345$/)) {
+  console.log("win");
+}
+
 console.log("\n");
 //i = 0;
 //while (i < z.length) {

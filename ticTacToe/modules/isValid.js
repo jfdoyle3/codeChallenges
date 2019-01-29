@@ -1,4 +1,4 @@
-function isValid(marked) {
+const isValid = marked => {
   if (marked == "X" || marked == "O") {
     console.log("f");
     return false;
@@ -6,5 +6,5 @@ function isValid(marked) {
     console.log("t");
     return true;
   }
-}
+};
 module.exports.isValid = isValid;
