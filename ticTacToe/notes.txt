@@ -1,6 +1,6 @@
 
 TODO: refactor to: check indexof for X/O if so, then indexof +dir to check for win : have it calculating a win of the fly.
-IDEA: TODO: after game is played make 2 arrays and pas through wins to determine win, finding out who wins after game is played.
+Complete: after game is played make 2 arrays and pass through wins to determine win, finding out who wins after game is played.
 space/int , X  , O
 a,b,c -check for same character
 across  +1
