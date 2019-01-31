@@ -1,12 +1,13 @@
 const grid = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-const z = ["X", "O", "X", "X", "O", "O", "X", " ", " "]; // X wins
+//const z = ["X", "O", "X", "X", "O", "O", "X", " ", " "]; // X wins
 //const z = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]; // O wins
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
 //const z = ["O", "X", "O", "X", "X", "X", "X", "O", "O"]; // X wins
 //const z = ["X", "O", "O", "O", "X", "X", "O", "O", "O"]; // O wins
-//const z = ["X", "O", "O", "O", "X", "X", "O", "O", "X"]; // X wins diag 0,4,8
+const z = ["X", "O", "O", "O", "X", "X", "O", "O", "X"]; // X wins diag 0,4,8
 //const z = ["X", "O", "O", "O", "O", "X", "O", "O", "O"]; // O wins diag 2,4,6
-
+//const z = [" ", " ", " ", " ", "O", "X", "O", "O", "O"]; // X Win
+//
 for (var i = 0; i < z.length; i++) {
   if (i % 3 == 0) {
     process.stdout.write("\n");
@@ -44,15 +45,29 @@ if (winX.match(everyWin[spaces])) {
   }
 console.log("X: " + winX + " | O: " + winO);
 // Process string remove useless moves /sort win
+//console.log(winX+" | "+winO);
 
-//const allWins = [/012/g, /345/g, /678/g, /036/g, /147/g, /258/g, /04/g, /246/g];
+var wins=[1,2,3,4];
+for (var p=0; p<z.length; p++){
+  for (var a=0; a<wins.length; a++){
+  if (z[p]=="X" ){ 
+   var e=[];
 
-for (var result = 0; result < allWins.length; result++) {
-  if (winX.match(allWins[result])) {
-    console.log("found: " + allWins[result] + " X Wins");
-    break;
-  } else if (winO.match(allWins[result])) {
-    console.log("found: " + allWins[result] + " O Wins");
-    break;
   }
-}
+   }
+ }
+
+//    /(?!.*[567])(?=.*048)/g
+//const allWins = [/012/g, /345/g, /678/g, /036/g, /147/g, /258/g, /048/g, /246/g];
+//const allWins = [/012/g, /345/g, /678/g, /036/g, /147/g, /258/g, /048/g, /246/g];
+//
+//for (var result = 0; result < allWins.length; result++) {
+//
+//  if (winX.match(allWins[result])) {
+//    console.log("found: " + allWins[result] + " X Wins");
+//    break;
+//  } else if (winO.match(allWins[result])) {
+//    console.log("found: " + allWins[result] + " O Wins");
+//    break;
+//  }
+//}
