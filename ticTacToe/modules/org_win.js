@@ -47,16 +47,15 @@ console.log("X: " + winX + " | O: " + winO);
 // Process string remove useless moves /sort win
 //console.log(winX+" | "+winO);
 
-var wins=[1,2,3,4];
-for (var p=0; p<z.length; p++){
-  for (var a=0; a<wins.length; a++){
-  if (z[p]=="X" ){ 
-   var e=[];
-
+var wins = [1, 2, 3, 4];
+for (var p = 0; p < z.length; p++) {
+  for (var a = 0; a < wins.length; a++) {
+    if (z[p] == "X") {
+      var e = [];
+    }
   }
-   }
- }
-
+}
+//  array.map(variable => do something)
 //    /(?!.*[567])(?=.*048)/g
 //const allWins = [/012/g, /345/g, /678/g, /036/g, /147/g, /258/g, /048/g, /246/g];
 //const allWins = [/012/g, /345/g, /678/g, /036/g, /147/g, /258/g, /048/g, /246/g];
