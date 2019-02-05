@@ -20,9 +20,10 @@ var places = z.map(token => {
   return token === "X";
 });
 console.log(places);
-if (places[0] == true || places[4] == true || places[8] == true) {
+if (places[0] && places[4] && places[8]) {
   console.log("Win");
 }
+
 //for (var i = 0; i < xPlace.length; i++) {
 //}
 // console.log("\n");\\
