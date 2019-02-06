@@ -17,15 +17,15 @@ for (var i = 0; i < z.length; i++) {
   process.stdout.write(grid[i] + "[" + z[i] + "]");
 }
 console.log("\n");
-var x = z.map(token => {
+var token = z.map(token => {
   return token === "X";
 });
 
-console.log(x);
-if (x[6] && x[7] && x[8]) {
+console.log(token);
+let wins = ["012", "123"];
+
+if (token[0] && token[1] && token[2]) {
   console.log("X Win");
-} else {
-  console.log ("ELSE: X to win 048: O Wins");
 }
 
 //for (var i = 0; i < xPlace.length; i++) {
