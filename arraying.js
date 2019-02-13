@@ -8,8 +8,8 @@ const d = ["_", "_", "X", "_", "_", "X", "_", "_", "X"];
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
 //const z = ["O", "X", "O", "X", "X", "X", "X", "O", "O"]; // X wins
 //const z = ["X", "O", "O", "O", "X", "X", "O", "O", "O"]; // O wins
-const z = ["X", "O", "O", "O", "X", "X", "O", " ", "X"]; // X wins diag 0,4,8
-//const z = ["X", "O", "O", "O", "O", "X", "O", "O", "O"]; // O wins diag 2,4,6
+//const z = ["X", "O", "O", "O", "X", "X", "O", " ", "X"]; // X wins diag 0,4,8
+const z = ["X", "O", "X", "O", "X", "X", "X", "O", "O"]; // O wins diag 2,4,6
 //const z = [" ", " ", " ", " ", "O", "X", "O", "O", "O"]; // O Win
 
 // Draw Board
@@ -41,5 +41,6 @@ while (i < moves) {
 console.log("x: ", x);
 console.log("o: ", o);
 console.log("win: ", b);
-let zz = x[0] + c[3];
-console.log(zz);
+
+let dWin = x.filter(win => win % 1 == 0);
+console.log(dWin);
