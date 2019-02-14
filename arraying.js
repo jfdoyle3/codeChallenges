@@ -1,5 +1,5 @@
 const a = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
-const b = ["048"];
+const b = ["048", "246"];
 const c = [1, 2, 3, 4];
 const d = ["_", "_", "X", "_", "_", "X", "_", "_", "X"];
 //various boards
@@ -38,9 +38,17 @@ while (i < moves) {
   }
   i++;
 }
-console.log("x: ", x);
-console.log("o: ", o);
-console.log("win: ", b);
+//var p=0;
+//while (p<x.length){
+d1 = x[0] + c[1];
 
-let dWin = x.filter(win => win % 1 == 0);
-console.log(dWin);
+console.log(d1);
+
+//  p++;
+//}
+//console.log("x: ", x);
+//console.log("o: ", o);
+//console.log("win: ", b);
+
+//let dWin = x.filter(win => win % 1 == 0);
+//console.log(dWin);
