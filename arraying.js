@@ -2,7 +2,7 @@ const a = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
 const b = ["048", "246"];
 const c = [1, 2, 3, 4];
 const d = ["_", "_", "X", "_", "_", "X", "_", "_", "X"];
-//various boards
+//various boards outcomes
 //const z = ["X", "O", "X", "X", "O", "O", "X", " ", " "]; // X wins
 //const z = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]; // O wins
 //const z = ["X", "O", "O", "O", "X", "X", "X", "O", "O"]; //Draw
