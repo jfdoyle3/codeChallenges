@@ -23,7 +23,7 @@ console.log(vBoard);
 // diag:/: %2 +2
 //
 // Win totals
-//  123  =  6
+//  123  =  z6
 //  456  =  15
 //  789  =  24
 //  = = =
